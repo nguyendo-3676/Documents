@@ -1,0 +1,31 @@
+cấu trúc thư mục bên trong pintos src
+threads : mã nguồn của kernel cơ sở để sửa đổi từ dự án 1
+userprog(user program): mã nguồn của trình tải chương trình người dùng để sửa đổi từ dự án 2
+vm(virtual memory): thư mục gần như trống rỗng , dùng để triển khai bộ nhớ ảo ở dự án 3
+filesys(file system): mã nguồn của hệ thống tập tin cơ bản, sử bắt đầu sử dụng từ  dự án 2, nhưng sẽ bắt đầu sửa đổi từ dự án 4
+devices: mã nguồn cho giao tiếp thiết bị I/O, bàn phím, bộ hẹn giờ, đĩa, sửa đổi triển khai bộ hẹn giờ trong dự án 1
+lib(library): triển khai 1 tập hợp con của thư viện C tiêu chuẩn, mã trong thư mục này được biên dịch thành cả nhân pintos và bắt đầu từ dự án 2, các chương trình người dúng chạy trong đó.
+lib/kernel: thư viện C chỉ có trong nhân pintos
+lib/user: các phần của thư viện C chỉ có trong chương trình người dùng
+test: kiểm thử cho từn dự án
+example: ctrinh nguời dùng mẫu sử dụng trong dự án 2
+utils: nếu quyết định làm việc với pintos trên máy tính
+
+
+Trong Build
+Makefile: một bản sao của pintos/src/Makefile.build : mô tả cách xây dựng kernel
+Kernel.o: tệp đối tượng cho toàn bộ kernel, kết quả của việc liên kết các tệp đối tượng được biên dịch từ nguồn hạt nhân riêng rẽ thành các đối tượng duy nhất 
+kernel.bin: hình ảnh bộ nhớ hạt nhân 
+loader.bin: HÌnh ảnh bộ nhớ cho trình nạp kernel, viết bằng hợp ngữ để nạp hạt nhân từ đĩa vào bộ nhớ và chạy nó
+
+
+
+
+
+
+
+
+
+
+
+

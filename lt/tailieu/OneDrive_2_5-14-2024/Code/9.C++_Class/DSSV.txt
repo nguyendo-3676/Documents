@@ -1,0 +1,7 @@
+              Ho Ten   GT Tuoi        DT        DL        DH       DTB
+       Nguyen Van A
+ Nam
+   24  3.000000  4.000000  5.000000  4.000000
+           Le Vãn B
+ Nam
+   23  4.000000  5.000000  6.000000  5.000000
